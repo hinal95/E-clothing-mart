@@ -108,11 +108,6 @@ const verifyStripe = async (req,res) =>{
      res.json({success:false, message:error.message})
   }
 }
-//place order by using razorpay
-const placeOrdersRazorpay = async () =>{
-
-
-}
 
 // All orders data for admin panel
 const allOrders = async (req,res) =>{
@@ -155,4 +150,4 @@ catch(error){
   res.json({success:false, message:error.message})
 }
 }
-export {allOrders, placeOrders, placeOrdersRazorpay, placeOrdersStripe,userOrders, updateStatus,verifyStripe }
+export {allOrders, placeOrders, placeOrdersStripe, userOrders, updateStatus,verifyStripe }
